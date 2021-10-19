@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "General Dentistry",
+        "question":"What is General Dentistry?",
+        "description":"General dentistry involves the use of various dental services which allow your dentist to diagnose, treat and prevent harmful oral conditions. These services are performed to enhance your overall health and well-being.",
+        "img": "https://i.ibb.co/BBdfBbM/guitar.jpg",
+        "price": 650
+    },
+    {
+        "id": 2,
+        "name": "Cosmetic Braces",
+        "question":"What is Cosmetic Braces?",
+        "description":"These braces use clear brackets and tooth-coloured wires so they are less noticeable than traditional braces. Clear aligners such as Invisalign are extremely discreet and can work on a wide range of orthodontic problems.",
+        "img": "https://i.ibb.co/hdwvBS8/violin.jpg",
+        "price": 400
+    },
+    {
+        "id": 3,
+        "name": "Pediatric Dentistry",
+        "question":"What is Pediatric Dentistry?",
+        "description":"Pediatric dentistry is a branch of dentistry that deals with the examination and management of dental health in children.Dental procedures are generally perceived as intimidating and painful experiences that most would like to avoid, especially among children.",
+        "img": "https://i.ibb.co/TWXgnLJ/piano.jpg",
+        "price": 500
+    },
+    {
+        "id": 4,
+        "name": "Dental Bridge",
+        "question":"What is Dental Bridge?",
+        "description":"A traditional dental bridge consists of a false tooth or teeth being held in place by dental crowns that have been cemented onto each of the.A bridge is a fixed dental restoration used to replace one or more missing teeth by joining an artificial tooth definitively to adjacent teeth or dental implants.",
+        "img": "https://i.ibb.co/mX3frLX/vocal.jpg",
+        "price": 350
+    },
+    {
+        "id": 5,
+        "name": "Root Canals",
+        "question":"What is Root Canals?",
+        "description":"Root canal treatment is a treatment sequence for the infected pulp of a tooth which is intended to result in the elimination of infection and the protection of the decontaminated tooth from future microbial invasion.",
+        "img": "https://i.ibb.co/QjLJNtX/drum.jpg",
+        "price": 600
+    },
+    {
+        "id": 6,
+        "name": "Oral Surgery",
+        "question":"What is Oral Surgery?",
+        "description":"Oral and maxillofacial surgery is a surgical specialty focusing on reconstructive surgery of the face, facial trauma surgery, the oral cavity, head and neck, mouth, and jaws, as well as facial cosmetic surgery.",
+        "img": "https://i.ibb.co/RHP8RTN/saxophone.jpg",
+        "price": 350
+    }
+]
