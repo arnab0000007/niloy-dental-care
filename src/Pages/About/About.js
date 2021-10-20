@@ -1,12 +1,13 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import about from '../../images/about.jpg';
 const About = () => {
 
   return (
     <Row id="about" className="bg-light p-5">
       <Col lg={6} md={8} sm={8} xs={12} className="m-auto">
         <Card>
-          <Card.Img className="img-fluid" variant="top" src="" />
+          <Card.Img className="img-fluid" variant="top" src={about} />
           <Card.Body>
             <Card.Title>Welcome to Niloy Dental Care</Card.Title>
             <Card.Text>
