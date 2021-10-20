@@ -1,13 +1,4 @@
-.carousel-caption {
-  position: absolute;
-  right: 15%;
-  bottom: 1.25rem;
-  left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 26.25rem;
-  color: #fff;
-  text-align: center;
-}
+
 .banner-overlay{
   position: relative;
 }
@@ -27,4 +18,28 @@
 }
 .carousel-caption p{
   font-size: 30px;
+}
+
+/*responsive */
+@media only screen and (max-width:688px) {
+  .carousel-caption h3{
+    font-size: 20px;
+  }
+  .carousel-caption p{
+    font-size: 15px;
+  }
+  .service-container{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+  .carousel-caption h3{
+    font-size: 30px;
+  }
+  .carousel-caption p{
+    font-size: 20px;
+  }
+  .service-container{
+      grid-template-columns: repeat(2, 1fr);
+  }
 }

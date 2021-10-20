@@ -45,7 +45,7 @@ const Register = () => {
 
               <input placeholder="Input your Password here" className="d-block mb-3 px-5" type="password" {...register("password", { required: true })} />
               {errors.password && <span className="error text-danger d-block">Password is required</span>}
-              <input type="submit" className="d-inline btn btn-secondary" />
+              <input type="submit" className="d-inline btn btn-warning" />
             </form>
             <div className="row mb-3 text-danger">{error}</div>
             <Link to="/login">Already Registered?</Link>

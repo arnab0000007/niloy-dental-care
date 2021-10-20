@@ -24,7 +24,7 @@ const SingleService = () => {
         </ListGroup>
         <Card.Body>
         <Link to={'/home/#service'}>
-                <button className="btn btn-secondary">Back to Services</button>
+                <button className="btn btn-warning">Back to Services</button>
             </Link>
         </Card.Body>
       </Card>
