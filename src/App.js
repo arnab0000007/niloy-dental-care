@@ -10,6 +10,8 @@ import ServiceProvider from './contexts/ServiceProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import SingleService from './Pages/SingleService/SingleService';
 import About from './Pages/About/About';
+import Footer from './Pages/Home/Footer/Footer';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -28,6 +30,9 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
@@ -41,6 +46,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
         </ServiceProvider>
       </AuthProvider>

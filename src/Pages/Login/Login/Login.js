@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useHistory} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-
+import './Login.css';
 const Login = () => {
 
     const [error, setError] = useState('');
@@ -17,13 +17,14 @@ const Login = () => {
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {
+                
                 history.push(redirect_uri);
             })
     }
     const handleEmailLogin = (email,password) => {
       loginWithEmail(email,password)
           .then(result => {
-              
+            console.log(result); 
               history.push(redirect_uri);
           })
   }
@@ -41,17 +42,28 @@ const Login = () => {
       handleEmailLogin( email, password );
     };
     return (
-        <div>
+        <div className="container ">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-8 col-12 m-auto mb-5 ">
+              <h3 className="pb-3 mt-5">Please Login Here</h3>
+
+            <div className="login-main d-flex flex-column align-items-center bg-light py-5">
             <form className="" onSubmit={handleSubmit(onSubmit)}>
-                <input placeholder="Input your email here" {...register("email", { required: true })} />
-                {errors.email && <span className="error">This field is required</span>}
-                <input placeholder="Input your Password here" type="password" {...register("password",{ required: true })} />
-                <input type="submit" />
+                <input placeholder="Input your email here" className="d-block mb-3  px-5" {...register("email", { required: true })} />
+              
+                {errors.email && <span className="error text-danger">Email is required</span>}
+
+                <input placeholder="Input your Password here" className="d-block mb-3 px-5" type="password" {...register("password",{ required: true })} />
+                {errors.password && <span className="error text-danger d-block">Password is required</span>}
+                <input type="submit" className="d-inline btn btn-secondary"  />
             </form>
             <div className="row mb-3 text-danger">{error}</div>
-            <button onClick={handleGoogleLogin} className="btn btn-warning">Google Sign In</button>
+            <button onClick={handleGoogleLogin} className="btn btn-warning text-white mb-3" >Google Sign In</button>
 
-            <Link to="/register"> Registere Here</Link>
+            <Link to="/register" className="text-black"> Registere Here</Link>
+            </div> 
+            </div>
+          </div>
         </div>
     );
 };

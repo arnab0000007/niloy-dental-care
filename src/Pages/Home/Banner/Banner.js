@@ -1,25 +1,25 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import banner1 from '../../../images/banner/banner1.jpg';
-import banner2 from '../../../images/banner/banner2.jpg';
-import banner3 from '../../../images/banner/banner3.jpg';
-
+import banner1 from '../../../images/banner/banner1.png';
+import banner2 from '../../../images/banner/banner2.png';
+import banner3 from '../../../images/banner/banner3.png';
+import './Banner.css';
 const Banner = () => {
     return (
         <>
-            <Carousel>
-                <Carousel.Item>
+            <Carousel >
+                <Carousel.Item className="banner-overlay">
                     <img
                         className="d-block w-100"
                         src={banner1}
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>I Was Created </h3>
+                        <p>To Create Beautiful Smiles</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="banner-overlay">
                     <img
                         className="d-block w-100"
                         src={banner2}
@@ -27,11 +27,11 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Every Tooth in a mans head </h3>
+                        <p>Is More Valuable Than A Diamond.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="banner-overlay">
                     <img
                         className="d-block w-100"
                         src={banner3}
@@ -39,8 +39,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>A Smile is The Prettiest Thing</h3>
+                        <p>You will Ever Wear</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
